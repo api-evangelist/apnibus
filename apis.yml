@@ -1,8 +1,26 @@
 aid: apnibus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/apnibus.png
 name: ApniBus
-description: 'ApniBus is a company surfaced as a portfolio company of version-one-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: marketplaces. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'ApniBus is an India-based online bus ticket booking platform that lets travelers
+  search routes, compare operators, select seats, and pay for tickets across government and
+  private bus services. It positions itself as a leading Indian bus-booking marketplace and an
+  official RSRTC (Rajasthan State Road Transport Corporation) booking partner, aggregating over
+  one lakh bus services across thousands of routes. The consumer experience spans a website and
+  Android/iOS apps, with UPI, cards, net banking, and wallet payments, instant e-ticket / m-ticket
+  confirmation, live bus tracking, and easy cancellation. ApniBus was surfaced as a portfolio
+  company of Version One Ventures and added to the API Evangelist network for enrichment; it
+  publishes no public developer or API program at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/apnibus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -16,9 +34,31 @@ modified: '2026-07-17'
 tags:
 - Company
 - Marketplaces
+- Travel
+- Mobility
+- Bus Ticketing
+- Transportation
+- India
+- Ticketing
 apis: []
+common:
+- type: DomainSecurity
+  url: security/apnibus-domain-security.yml
+- type: Website
+  url: https://apnibus.com/
+- type: TermsOfService
+  url: https://apnibus.com/terms-and-condition
+- type: PrivacyPolicy
+  url: https://apnibus.com/privacy-policy
+- type: Support
+  url: mailto:support@apnibus.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
